@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Bettrix</title>
+    <meta
+      name="description"
+      content="Bettrix portfolio and case studies with filter tabs and result-driven summaries."
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="portfolio">
+    <div data-site-header></div>
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero__grid">
+          <div class="page-hero__copy">
+            <div class="page-hero__eyebrow">Portfolio</div>
+            <div class="page-hero__header">
+              <h1>Case studies that show the process and the result.</h1>
+              <p class="lead">
+                The portfolio makes it easy to scan by business type, see the problem solved, and
+                understand the value of each build.
+              </p>
+            </div>
+            <div class="page-hero__actions">
+              <a class="button" href="contact.html#booking">Request a similar build</a>
+              <a class="button--ghost" href="pricing.html">See pricing</a>
+            </div>
+          </div>
+          <div class="page-hero__visual">
+            <div class="dashboard-card" data-reveal>
+              <div class="stats-grid">
+                <div class="stat">
+                  <strong>3</strong>
+                  <span>main filters</span>
+                </div>
+                <div class="stat">
+                  <strong>4</strong>
+                  <span>featured case studies</span>
+                </div>
+                <div class="stat">
+                  <strong>1</strong>
+                  <span>clear conversion path</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container" data-site-showcase></div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__eyebrow">Filter case studies</div>
+            <h2>Sort by the kind of work you want to see.</h2>
+          </div>
+          <div class="filter-tabs" role="tablist" aria-label="Portfolio filters">
+            <button class="filter-tab" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-tab" type="button" data-filter="local" aria-pressed="false">Local</button>
+            <button class="filter-tab" type="button" data-filter="startup" aria-pressed="false">Startup</button>
+            <button class="filter-tab" type="button" data-filter="growth" aria-pressed="false">Growth</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="portfolio-grid">
+            <article class="case-card" data-category="startup growth" data-reveal>
+              <div class="case-card__meta">
+                <span class="case-card__badge">Startup</span>
+                <span class="case-card__badge">Growth</span>
+              </div>
+              <h3>Launch-ready product site</h3>
+              <p class="subtle">Problem: the team needed a sharper first impression before raising interest.</p>
+              <p class="subtle">Solution: a stripped-back page stack with a stronger hierarchy and CTA.</p>
+              <p class="subtle">Result: the site became easier to explain and easier to sell.</p>
+            </article>
+            <article class="case-card" data-category="local" data-reveal>
+              <div class="case-card__meta">
+                <span class="case-card__badge">Local</span>
+              </div>
+              <h3>Service business with clearer enquiries</h3>
+              <p class="subtle">Problem: visitors were interested but not confident enough to contact.</p>
+              <p class="subtle">Solution: trust signals, FAQs, and a pricing preview.</p>
+              <p class="subtle">Result: higher-quality enquiries from the right audience.</p>
+            </article>
+            <article class="case-card" data-category="growth local" data-reveal>
+              <div class="case-card__meta">
+                <span class="case-card__badge">Growth</span>
+                <span class="case-card__badge">Local</span>
+              </div>
+              <h3>Maintenance refresh for an existing site</h3>
+              <p class="subtle">Problem: the website felt stale and hard to update.</p>
+              <p class="subtle">Solution: cleaner sections, updated copy, and support processes.</p>
+              <p class="subtle">Result: less friction when the business needed changes.</p>
+            </article>
+            <article class="case-card" data-category="startup" data-reveal>
+              <div class="case-card__meta">
+                <span class="case-card__badge">Startup</span>
+              </div>
+              <h3>Fast brochure site for a new founder</h3>
+              <p class="subtle">Problem: no digital home for the offer.</p>
+              <p class="subtle">Solution: a compact site with a focused story and one CTA.</p>
+              <p class="subtle">Result: a polished launch presence in a short window.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__eyebrow">Results</div>
+            <h2>What the portfolio should communicate at a glance.</h2>
+          </div>
+          <div class="stats-grid">
+            <article class="stat" data-reveal>
+              <strong>Faster launches</strong>
+              <span>Shorter path from discovery to live site.</span>
+            </article>
+            <article class="stat" data-reveal>
+              <strong>Better fit</strong>
+              <span>Structure and messaging that match the audience.</span>
+            </article>
+            <article class="stat" data-reveal>
+              <strong>Ongoing support</strong>
+              <span>Maintenance-ready delivery, not a dead handoff.</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-band" data-reveal>
+            <div class="stack">
+              <div class="section__eyebrow">Need something similar?</div>
+              <h2>Bring the idea. Bettrix will shape the site around it.</h2>
+            </div>
+            <a class="button" href="contact.html#booking">Book a discovery call</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <div data-site-whatsapp></div>
+    <script type="module" src="assets/site.js"></script>
+  </body>
+</html>
