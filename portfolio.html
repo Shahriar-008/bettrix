@@ -8,41 +8,42 @@
       name="description"
       content="Bettrix portfolio and case studies with filter tabs and result-driven summaries."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body data-page="portfolio">
     <div data-site-header></div>
     <main>
       <section class="page-hero">
-        <div class="container page-hero__grid">
-          <div class="page-hero__copy">
-            <div class="page-hero__eyebrow">Portfolio</div>
-            <div class="page-hero__header">
-              <h1>Case studies that show the process and the result.</h1>
-              <p class="lead">
-                The portfolio makes it easy to scan by business type, see the problem solved, and
-                understand the value of each build.
-              </p>
-            </div>
-            <div class="page-hero__actions">
-              <a class="button" href="contact.html#booking">Request a similar build</a>
-              <a class="button--ghost" href="pricing.html">See pricing</a>
+        <div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+          <div class="lg:col-span-7 grid gap-lg">
+            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Portfolio</div>
+            <h1>Case studies that show the process and the result.</h1>
+            <p class="text-on-surface-variant text-body-lg max-w-[62ch]">
+              The portfolio makes it easy to scan by business type, see the problem solved, and
+              understand the value of each build.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-primary shadow-bettrix-blue hover:-translate-y-0.5 transition-all" href="contact.html#booking">Request a similar build</a>
+              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-on-surface border border-outline bg-white hover:bg-surface-container-low transition-all" href="pricing.html">See pricing</a>
             </div>
           </div>
-          <div class="page-hero__visual">
-            <div class="dashboard-card" data-reveal>
-              <div class="stats-grid">
-                <div class="stat">
-                  <strong>3</strong>
-                  <span>main filters</span>
+          <div class="lg:col-span-5 relative grid gap-md">
+            <div class="glass-card p-lg" data-reveal>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+                <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2">
+                  <strong class="text-on-surface text-xl tracking-tight">3</strong>
+                  <span class="text-on-surface-variant text-body-sm">main filters</span>
                 </div>
-                <div class="stat">
-                  <strong>4</strong>
-                  <span>featured case studies</span>
+                <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2">
+                  <strong class="text-on-surface text-xl tracking-tight">4</strong>
+                  <span class="text-on-surface-variant text-body-sm">featured case studies</span>
                 </div>
-                <div class="stat">
-                  <strong>1</strong>
-                  <span>clear conversion path</span>
+                <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2">
+                  <strong class="text-on-surface text-xl tracking-tight">1</strong>
+                  <span class="text-on-surface-variant text-body-sm">clear conversion path</span>
                 </div>
               </div>
             </div>
@@ -50,101 +51,101 @@
         </div>
       </section>
 
-      <section class="section section--soft">
-        <div class="container" data-site-showcase></div>
+      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop" data-site-showcase></div>
       </section>
 
-      <section class="section section--soft">
-        <div class="container">
-          <div class="section__header">
-            <div class="section__eyebrow">Filter case studies</div>
+      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
+          <div class="grid gap-md mb-2xl">
+            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Filter case studies</div>
             <h2>Sort by the kind of work you want to see.</h2>
           </div>
-          <div class="filter-tabs" role="tablist" aria-label="Portfolio filters">
-            <button class="filter-tab" type="button" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter-tab" type="button" data-filter="local" aria-pressed="false">Local</button>
-            <button class="filter-tab" type="button" data-filter="startup" aria-pressed="false">Startup</button>
-            <button class="filter-tab" type="button" data-filter="growth" aria-pressed="false">Growth</button>
+          <div class="flex flex-wrap gap-2" role="tablist" aria-label="Portfolio filters">
+            <button class="px-3 py-2 rounded-full border border-outline bg-white text-on-surface-variant font-semibold text-white border-transparent bg-primary" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="px-3 py-2 rounded-full border border-outline bg-white text-on-surface-variant font-semibold" type="button" data-filter="local" aria-pressed="false">Local</button>
+            <button class="px-3 py-2 rounded-full border border-outline bg-white text-on-surface-variant font-semibold" type="button" data-filter="startup" aria-pressed="false">Startup</button>
+            <button class="px-3 py-2 rounded-full border border-outline bg-white text-on-surface-variant font-semibold" type="button" data-filter="growth" aria-pressed="false">Growth</button>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="portfolio-grid">
-            <article class="case-card" data-category="startup growth" data-reveal>
-              <div class="case-card__meta">
-                <span class="case-card__badge">Startup</span>
-                <span class="case-card__badge">Growth</span>
+      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-3" data-category="startup growth" data-reveal>
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Startup</span>
+                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Growth</span>
               </div>
               <h3>Launch-ready product site</h3>
-              <p class="subtle">Problem: the team needed a sharper first impression before raising interest.</p>
-              <p class="subtle">Solution: a stripped-back page stack with a stronger hierarchy and CTA.</p>
-              <p class="subtle">Result: the site became easier to explain and easier to sell.</p>
+              <p class="text-on-surface-variant text-body-sm">Problem: the team needed a sharper first impression before raising interest.</p>
+              <p class="text-on-surface-variant text-body-sm">Solution: a stripped-back page stack with a stronger hierarchy and CTA.</p>
+              <p class="text-on-surface-variant text-body-sm">Result: the site became easier to explain and easier to sell.</p>
             </article>
-            <article class="case-card" data-category="local" data-reveal>
-              <div class="case-card__meta">
-                <span class="case-card__badge">Local</span>
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-3" data-category="local" data-reveal>
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Local</span>
               </div>
               <h3>Service business with clearer enquiries</h3>
-              <p class="subtle">Problem: visitors were interested but not confident enough to contact.</p>
-              <p class="subtle">Solution: trust signals, FAQs, and a pricing preview.</p>
-              <p class="subtle">Result: higher-quality enquiries from the right audience.</p>
+              <p class="text-on-surface-variant text-body-sm">Problem: visitors were interested but not confident enough to contact.</p>
+              <p class="text-on-surface-variant text-body-sm">Solution: trust signals, FAQs, and a pricing preview.</p>
+              <p class="text-on-surface-variant text-body-sm">Result: higher-quality enquiries from the right audience.</p>
             </article>
-            <article class="case-card" data-category="growth local" data-reveal>
-              <div class="case-card__meta">
-                <span class="case-card__badge">Growth</span>
-                <span class="case-card__badge">Local</span>
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-3" data-category="growth local" data-reveal>
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Growth</span>
+                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Local</span>
               </div>
               <h3>Maintenance refresh for an existing site</h3>
-              <p class="subtle">Problem: the website felt stale and hard to update.</p>
-              <p class="subtle">Solution: cleaner sections, updated copy, and support processes.</p>
-              <p class="subtle">Result: less friction when the business needed changes.</p>
+              <p class="text-on-surface-variant text-body-sm">Problem: the website felt stale and hard to update.</p>
+              <p class="text-on-surface-variant text-body-sm">Solution: cleaner sections, updated copy, and support processes.</p>
+              <p class="text-on-surface-variant text-body-sm">Result: less friction when the business needed changes.</p>
             </article>
-            <article class="case-card" data-category="startup" data-reveal>
-              <div class="case-card__meta">
-                <span class="case-card__badge">Startup</span>
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-3" data-category="startup" data-reveal>
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Startup</span>
               </div>
               <h3>Fast brochure site for a new founder</h3>
-              <p class="subtle">Problem: no digital home for the offer.</p>
-              <p class="subtle">Solution: a compact site with a focused story and one CTA.</p>
-              <p class="subtle">Result: a polished launch presence in a short window.</p>
+              <p class="text-on-surface-variant text-body-sm">Problem: no digital home for the offer.</p>
+              <p class="text-on-surface-variant text-body-sm">Solution: a compact site with a focused story and one CTA.</p>
+              <p class="text-on-surface-variant text-body-sm">Result: a polished launch presence in a short window.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--soft">
-        <div class="container">
-          <div class="section__header">
-            <div class="section__eyebrow">Results</div>
+      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
+          <div class="grid gap-md mb-2xl">
+            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Results</div>
             <h2>What the portfolio should communicate at a glance.</h2>
           </div>
-          <div class="stats-grid">
-            <article class="stat" data-reveal>
-              <strong>Faster launches</strong>
-              <span>Shorter path from discovery to live site.</span>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2" data-reveal>
+              <strong class="text-on-surface text-xl tracking-tight">Faster launches</strong>
+              <span class="text-on-surface-variant text-body-sm">Shorter path from discovery to live site.</span>
             </article>
-            <article class="stat" data-reveal>
-              <strong>Better fit</strong>
-              <span>Structure and messaging that match the audience.</span>
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2" data-reveal>
+              <strong class="text-on-surface text-xl tracking-tight">Better fit</strong>
+              <span class="text-on-surface-variant text-body-sm">Structure and messaging that match the audience.</span>
             </article>
-            <article class="stat" data-reveal>
-              <strong>Ongoing support</strong>
-              <span>Maintenance-ready delivery, not a dead handoff.</span>
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2" data-reveal>
+              <strong class="text-on-surface text-xl tracking-tight">Ongoing support</strong>
+              <span class="text-on-surface-variant text-body-sm">Maintenance-ready delivery, not a dead handoff.</span>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
+      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
           <div class="cta-band" data-reveal>
-            <div class="stack">
-              <div class="section__eyebrow">Need something similar?</div>
+            <div class="grid gap-md">
+              <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Need something similar?</div>
               <h2>Bring the idea. Bettrix will shape the site around it.</h2>
             </div>
-            <a class="button" href="contact.html#booking">Book a discovery call</a>
+            <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-primary shadow-bettrix-blue hover:-translate-y-0.5 transition-all" href="contact.html#booking">Book a discovery call</a>
           </div>
         </div>
       </section>

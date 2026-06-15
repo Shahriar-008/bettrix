@@ -8,61 +8,67 @@
       name="description"
       content="Bettrix builds affordable, fast websites for small businesses, mid-size companies, and startups."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body data-page="home">
     <div data-site-header></div>
     <main>
-      <section class="hero">
-        <div class="container hero__grid">
-          <div class="hero__copy">
-            <div class="hero__eyebrow">Affordable & fast web design</div>
+      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+          <div class="lg:col-span-7 grid gap-lg">
+            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Affordable & fast web design</div>
             <h1>Better websites. Faster results.</h1>
-            <p class="lead">
+            <p class="text-on-surface-variant text-body-lg max-w-[62ch]">
               Bettrix designs and maintains custom websites for local businesses, growing companies,
               and startups that want a clean, professional presence without the agency overhead.
             </p>
-            <div class="hero__actions">
-              <a class="button" href="contact.html#booking">Book a discovery call</a>
-              <a class="button--ghost" href="pricing.html">View pricing</a>
+            <div class="flex flex-wrap gap-3">
+              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-primary shadow-bettrix-blue hover:-translate-y-0.5 transition-all" href="contact.html#booking">Book a discovery call</a>
+              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-on-surface border border-outline bg-white hover:bg-surface-container-low transition-all" href="pricing.html">View pricing</a>
             </div>
-            <div class="hero__metrics">
-              <div class="metric">
-                <strong>Fast</strong>
-                <span>Clear timelines and quick delivery.</span>
+            <div class="grid grid-cols-3 gap-md mt-2">
+              <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-md">
+                <strong class="block text-on-surface text-xl tracking-tight">Fast</strong>
+                <span class="text-on-surface-variant text-body-sm">Clear timelines and quick delivery.</span>
               </div>
-              <div class="metric">
-                <strong>Affordable</strong>
-                <span>Simple packages for every stage.</span>
+              <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-md">
+                <strong class="block text-on-surface text-xl tracking-tight">Affordable</strong>
+                <span class="text-on-surface-variant text-body-sm">Simple packages for every stage.</span>
               </div>
-              <div class="metric">
-                <strong>Ongoing</strong>
-                <span>Maintenance and support included.</span>
+              <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-md">
+                <strong class="block text-on-surface text-xl tracking-tight">Ongoing</strong>
+                <span class="text-on-surface-variant text-body-sm">Maintenance and support included.</span>
               </div>
             </div>
           </div>
-          <div class="hero__visual">
-            <div class="hero__mock" data-reveal>
-              <div class="hero__mock-grid">
-                <div class="mock-panel mock-panel--accent">
-                  <span class="mock-panel__label">Conversion</span>
+          <div class="lg:col-span-5 relative grid gap-md">
+            <div class="glass-card p-lg" data-reveal>
+              <div class="grid grid-cols-2 gap-3">
+                <div class="rounded-xl p-md border border-primary/10 bg-gradient-to-br from-primary/10 to-tertiary/10">
+                  <span class="inline-flex mb-3 px-2 py-0.5 rounded-full text-label-sm font-bold uppercase text-primary bg-primary/10">Conversion</span>
                   <h3>Lead-focused homepage</h3>
-                  <p class="subtle">Clear CTA, social proof, and fast routing to contact.</p>
+                  <p class="text-on-surface-variant text-body-sm">Clear CTA, social proof, and fast routing to contact.</p>
                 </div>
-                <div class="mock-panel">
-                  <span class="mock-panel__label">Trust</span>
+                <div class="rounded-xl p-md border border-primary/10 bg-gradient-to-b from-white to-blue-50/50">
+                  <span class="inline-flex mb-3 px-2 py-0.5 rounded-full text-label-sm font-bold uppercase text-primary bg-primary/10">Trust</span>
                   <h3>Proof-heavy layout</h3>
-                  <p class="subtle">Logos, stats, testimonials, and case studies.</p>
+                  <p class="text-on-surface-variant text-body-sm">Logos, stats, testimonials, and case studies.</p>
                 </div>
-                <div class="mock-panel">
-                  <span class="mock-panel__label">Speed</span>
+                <div class="rounded-xl p-md border border-primary/10 bg-gradient-to-b from-white to-blue-50/50">
+                  <span class="inline-flex mb-3 px-2 py-0.5 rounded-full text-label-sm font-bold uppercase text-primary bg-primary/10">Speed</span>
                   <h3>Mobile-first structure</h3>
-                  <p class="subtle">Built to stay clean and readable on every device.</p>
+                  <p class="text-on-surface-variant text-body-sm">Built to stay clean and readable on every device.</p>
                 </div>
-                <div class="mock-panel mock-panel--accent">
-                  <span class="mock-panel__label">Support</span>
+                <div class="rounded-xl p-md border border-primary/10 bg-gradient-to-br from-primary/10 to-tertiary/10">
+                  <span class="inline-flex mb-3 px-2 py-0.5 rounded-full text-label-sm font-bold uppercase text-primary bg-primary/10">Support</span>
                   <h3>Maintenance-ready</h3>
-                  <p class="subtle">Designed for long-term updates, not one-off launches.</p>
+                  <p class="text-on-surface-variant text-body-sm">Designed for long-term updates, not one-off launches.</p>
                 </div>
               </div>
             </div>
@@ -70,60 +76,60 @@
         </div>
       </section>
 
-      <section class="trust-strip section--soft">
-        <div class="container trust-strip__inner" data-reveal>
-          <div class="section__header">
-            <div class="section__eyebrow">Trusted by growing teams</div>
+      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto grid gap-md p-lg rounded-3xl bg-surface-container-low border border-outline" data-reveal>
+          <div class="grid gap-md mb-2xl">
+            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Trusted by growing teams</div>
             <h2>Built to feel credible before the first call.</h2>
-            <p class="section__subhead">
+            <p class="text-on-surface-variant max-w-[56ch]">
               Client logos, proof points, and testimonials appear early so visitors understand the value
               fast.
             </p>
           </div>
-          <div class="trust-strip__logos">
-            <div class="trust-pill">Northstar</div>
-            <div class="trust-pill">Fieldstone</div>
-            <div class="trust-pill">Atlas</div>
-            <div class="trust-pill">Bloom</div>
-            <div class="trust-pill">Vertex</div>
+          <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+            <div class="bg-surface border border-outline rounded-2xl p-3 text-center text-on-surface font-semibold">Northstar</div>
+            <div class="bg-surface border border-outline rounded-2xl p-3 text-center text-on-surface font-semibold">Fieldstone</div>
+            <div class="bg-surface border border-outline rounded-2xl p-3 text-center text-on-surface font-semibold">Atlas</div>
+            <div class="bg-surface border border-outline rounded-2xl p-3 text-center text-on-surface font-semibold">Bloom</div>
+            <div class="bg-surface border border-outline rounded-2xl p-3 text-center text-on-surface font-semibold">Vertex</div>
           </div>
         </div>
       </section>
 
-      <section class="section section--soft">
-        <div class="container" data-site-showcase></div>
+      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto" data-site-showcase></div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section__header">
-            <div class="section__eyebrow">Services snapshot</div>
+      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto">
+          <div class="grid gap-md mb-2xl">
+            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Services snapshot</div>
             <h2>Two core offers, presented clearly.</h2>
-            <p class="section__subhead">
+            <p class="text-on-surface-variant max-w-[56ch]">
               The homepage quickly shows what Bettrix builds and how long-term support works.
             </p>
           </div>
-          <div class="card-grid">
-            <article class="feature-card" data-reveal>
-              <div class="feature-card__icon">01</div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
+              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">01</div>
               <h3>Custom website builds</h3>
-              <p class="subtle">
+              <p class="text-on-surface-variant text-body-sm">
                 Strategy-led sites for businesses that need a strong launch, better positioning, and a
                 cleaner path to leads.
               </p>
             </article>
-            <article class="feature-card" data-reveal>
-              <div class="feature-card__icon">02</div>
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
+              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">02</div>
               <h3>Website maintenance</h3>
-              <p class="subtle">
+              <p class="text-on-surface-variant text-body-sm">
                 Reliable updates, fixes, content changes, and ongoing care so the site stays fast and
                 secure.
               </p>
             </article>
-            <article class="feature-card" data-reveal>
-              <div class="feature-card__icon">03</div>
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
+              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">03</div>
               <h3>Conversion structure</h3>
-              <p class="subtle">
+              <p class="text-on-surface-variant text-body-sm">
                 Copy, layout, and CTA strategy that helps visitors move from interest to action with less
                 friction.
               </p>
@@ -132,60 +138,60 @@
         </div>
       </section>
 
-      <section class="section section--soft">
-        <div class="container">
-          <div class="section__header">
-            <div class="section__eyebrow">How it works</div>
+      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto">
+          <div class="grid gap-md mb-2xl">
+            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">How it works</div>
             <h2>Simple steps, fast momentum.</h2>
           </div>
-          <div class="feature-grid">
-            <article class="info-card" data-reveal>
-              <div class="stat__icon">1</div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
+              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">1</div>
               <h3>Discover</h3>
-              <p class="subtle">We clarify the audience, offer, pages, and deadline.</p>
+              <p class="text-on-surface-variant text-body-sm">We clarify the audience, offer, pages, and deadline.</p>
             </article>
-            <article class="info-card" data-reveal>
-              <div class="stat__icon">2</div>
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
+              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">2</div>
               <h3>Design & build</h3>
-              <p class="subtle">We turn the strategy into a clean responsive website.</p>
+              <p class="text-on-surface-variant text-body-sm">We turn the strategy into a clean responsive website.</p>
             </article>
-            <article class="info-card" data-reveal>
-              <div class="stat__icon">3</div>
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
+              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">3</div>
               <h3>Launch & maintain</h3>
-              <p class="subtle">We go live, then keep the site current with ongoing support.</p>
+              <p class="text-on-surface-variant text-body-sm">We go live, then keep the site current with ongoing support.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section__header">
-            <div class="section__eyebrow">Portfolio highlights</div>
+      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto">
+          <div class="grid gap-md mb-2xl">
+            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Portfolio highlights</div>
             <h2>Results that make the service feel real.</h2>
           </div>
-          <div class="portfolio-grid">
-            <article class="case-card" data-reveal>
-              <div class="case-card__meta">
-                <span class="case-card__badge">Startup</span>
-                <span class="case-card__badge">Launch</span>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-3" data-reveal>
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Startup</span>
+                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Launch</span>
               </div>
               <h3>New product site in two weeks</h3>
-              <p class="subtle">A clean launch page, clear offer hierarchy, and stronger signup flow.</p>
-              <ul>
+              <p class="text-on-surface-variant text-body-sm">A clean launch page, clear offer hierarchy, and stronger signup flow.</p>
+              <ul class="mt-3 ps-5 text-on-surface-variant text-body-sm grid gap-2">
                 <li>Problem: weak first impression</li>
                 <li>Solution: simplified structure and stronger CTA</li>
                 <li>Result: faster launch and clearer sales story</li>
               </ul>
             </article>
-            <article class="case-card" data-reveal>
-              <div class="case-card__meta">
-                <span class="case-card__badge">Local business</span>
-                <span class="case-card__badge">Service</span>
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-3" data-reveal>
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Local business</span>
+                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Service</span>
               </div>
               <h3>Higher-quality enquiries for a service brand</h3>
-              <p class="subtle">Focused service pages and trust signals for visitors who compare options.</p>
-              <ul>
+              <p class="text-on-surface-variant text-body-sm">Focused service pages and trust signals for visitors who compare options.</p>
+              <ul class="mt-3 ps-5 text-on-surface-variant text-body-sm grid gap-2">
                 <li>Problem: visitors left before contacting</li>
                 <li>Solution: proof-first homepage and pricing preview</li>
                 <li>Result: stronger enquiries from qualified leads</li>
@@ -195,38 +201,47 @@
         </div>
       </section>
 
-      <section class="section section--soft">
-        <div class="container">
-          <div class="section__header">
-            <div class="section__eyebrow">Pricing preview</div>
+      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto">
+          <div class="grid gap-md mb-2xl">
+            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Pricing preview</div>
             <h2>Three tiers that keep the offer easy to scan.</h2>
           </div>
-          <div class="pricing-grid">
-            <article class="pricing-card" data-reveal>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
               <h3>Starter</h3>
-              <p class="subtle">Best for simple launches.</p>
-              <div class="pricing-card__price"><strong>$</strong><span>Entry package</span></div>
-              <ul>
+              <p class="text-on-surface-variant text-body-sm">Best for simple launches.</p>
+              <div class="flex items-baseline gap-1 my-md">
+                <strong class="text-4xl text-on-surface tracking-tight">$</strong>
+                <span class="text-on-surface-variant">Entry package</span>
+              </div>
+              <ul class="mt-3 ps-5 text-on-surface-variant text-body-sm grid gap-2">
                 <li>One-page or lean multi-page site</li>
                 <li>Core branding and CTA structure</li>
                 <li>Basic maintenance handoff</li>
               </ul>
             </article>
-            <article class="pricing-card pricing-card--featured" data-reveal>
+            <article class="bg-surface border border-primary/35 rounded-2xl shadow-bettrix-lg -translate-y-1 p-lg" data-reveal>
               <h3>Business</h3>
-              <p class="subtle">Best for growing companies.</p>
-              <div class="pricing-card__price"><strong>$$</strong><span>Most popular</span></div>
-              <ul>
+              <p class="text-on-surface-variant text-body-sm">Best for growing companies.</p>
+              <div class="flex items-baseline gap-1 my-md">
+                <strong class="text-4xl text-on-surface tracking-tight">$$</strong>
+                <span class="text-on-surface-variant">Most popular</span>
+              </div>
+              <ul class="mt-3 ps-5 text-on-surface-variant text-body-sm grid gap-2">
                 <li>Full six-page marketing site</li>
                 <li>Copy, structure, and trust sections</li>
                 <li>Ongoing updates and support</li>
               </ul>
             </article>
-            <article class="pricing-card" data-reveal>
+            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
               <h3>Pro</h3>
-              <p class="subtle">Best for complex needs.</p>
-              <div class="pricing-card__price"><strong>$$$</strong><span>Advanced support</span></div>
-              <ul>
+              <p class="text-on-surface-variant text-body-sm">Best for complex needs.</p>
+              <div class="flex items-baseline gap-1 my-md">
+                <strong class="text-4xl text-on-surface tracking-tight">$$$</strong>
+                <span class="text-on-surface-variant">Advanced support</span>
+              </div>
+              <ul class="mt-3 ps-5 text-on-surface-variant text-body-sm grid gap-2">
                 <li>Expanded pages or custom flows</li>
                 <li>Priority turnaround</li>
                 <li>Deeper maintenance partnership</li>
@@ -236,74 +251,77 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section__header">
-            <div class="section__eyebrow">Testimonials</div>
+      <section class=”py-4xl px-margin-mobile md:px-margin-desktop”>
+        <div class=”max-w-container mx-auto”>
+          <div class=”grid gap-md mb-2xl”>
+            <div class=”inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase”>Testimonials</div>
             <h2>Trust signals that reduce hesitation.</h2>
           </div>
-          <div class="stats-grid">
-            <article class="stat" data-reveal>
-              <div class="stat__icon">“</div>
-              <strong>Fast, clear, and easy to work with.</strong>
-              <span>— Local service brand</span>
+          <div class=”grid grid-cols-1 md:grid-cols-3 gap-md”>
+            <article class=”bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2” data-reveal>
+              <div class=”w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold”>”</div>
+              <strong class=”text-on-surface text-lg tracking-tight”>Fast, clear, and easy to work with.</strong>
+              <span class=”text-on-surface-variant text-body-sm”>— Local service brand</span>
             </article>
-            <article class="stat" data-reveal>
-              <div class="stat__icon">“</div>
-              <strong>They made the site feel premium without making it expensive.</strong>
-              <span>— Startup founder</span>
+            <article class=”bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2” data-reveal>
+              <div class=”w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold”>”</div>
+              <strong class=”text-on-surface text-lg tracking-tight”>They made the site feel premium without making it expensive.</strong>
+              <span class=”text-on-surface-variant text-body-sm”>— Startup founder</span>
             </article>
-            <article class="stat" data-reveal>
-              <div class="stat__icon">“</div>
-              <strong>Our maintenance now feels organized instead of reactive.</strong>
-              <span>— Operations lead</span>
+            <article class=”bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2” data-reveal>
+              <div class=”w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold”>”</div>
+              <strong class=”text-on-surface text-lg tracking-tight”>Our maintenance now feels organized instead of reactive.</strong>
+              <span class=”text-on-surface-variant text-body-sm”>— Operations lead</span>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--soft">
-        <div class="container">
-          <div class="section__header">
-            <div class="section__eyebrow">Frequently asked questions</div>
+      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto">
+          <div class="grid gap-md mb-2xl">
+            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Frequently asked questions</div>
             <h2>Answer objections before they slow the call.</h2>
           </div>
-          <div class="faq-card" data-reveal>
+          <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
             <details open>
-              <summary>How quickly can you launch a website?</summary>
-              <p>
+              <summary class="cursor-pointer text-on-surface font-semibold list-none">How quickly can you launch a website?</summary>
+              <p class="mt-3 text-on-surface-variant text-body-sm">
                 The timeline depends on scope, but the process is intentionally fast and structured so
                 smaller sites can move quickly.
               </p>
             </details>
+            <hr class="my-3 border-outline/50" />
             <details>
-              <summary>Do you work with small businesses and startups?</summary>
-              <p>Yes. Bettrix is designed to support local businesses, mid-size teams, and startups.</p>
+              <summary class="cursor-pointer text-on-surface font-semibold list-none">Do you work with small businesses and startups?</summary>
+              <p class="mt-3 text-on-surface-variant text-body-sm">Yes. Bettrix is designed to support local businesses, mid-size teams, and startups.</p>
             </details>
+            <hr class="my-3 border-outline/50" />
             <details>
-              <summary>Can you maintain the website after launch?</summary>
-              <p>
+              <summary class="cursor-pointer text-on-surface font-semibold list-none">Can you maintain the website after launch?</summary>
+              <p class="mt-3 text-on-surface-variant text-body-sm">
                 Yes. Ongoing maintenance is part of the offer, including updates, fixes, and support.
               </p>
             </details>
+            <hr class="my-3 border-outline/50" />
             <details>
-              <summary>Do I need to know exactly what I want first?</summary>
-              <p>No. Bettrix helps turn the rough idea into a clear plan and clean website structure.</p>
+              <summary class="cursor-pointer text-on-surface font-semibold list-none">Do I need to know exactly what I want first?</summary>
+              <p class="mt-3 text-on-surface-variant text-body-sm">No. Bettrix helps turn the rough idea into a clear plan and clean website structure.</p>
             </details>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
+      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container mx-auto">
           <div class="cta-band" data-reveal>
-            <div class="stack">
-              <div class="section__eyebrow">Ready when you are</div>
+            <div class="grid gap-md">
+              <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Ready when you are</div>
               <h2>Book a discovery call and map the fastest path forward.</h2>
             </div>
-            <div class="section__actions">
-              <a class="button" href="contact.html#booking">Book a discovery call</a>
-              <a class="button--alt" href="contact.html#whatsapp">Chat on WhatsApp</a>
+            <div class="flex flex-wrap gap-3">
+              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-primary shadow-bettrix-blue hover:-translate-y-0.5 transition-all" href="contact.html#booking">Book a discovery call</a>
+              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-tertiary shadow-bettrix-green hover:-translate-y-0.5 transition-all" href="contact.html#whatsapp">Chat on WhatsApp</a>
             </div>
           </div>
         </div>
