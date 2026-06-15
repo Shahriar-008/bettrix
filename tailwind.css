@@ -102,6 +102,10 @@
     margin: 0;
   }
 
+  main {
+    padding-bottom: 5rem;
+  }
+
   img,
   svg {
     display: block;
