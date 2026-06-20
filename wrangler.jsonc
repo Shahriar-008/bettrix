@@ -1,0 +1,22 @@
+// wrangler.jsonc — Bettrix static site config
+// Created: 2026-06-20
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bettrix",
+  "compatibility_date": "2026-06-20",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".",
+    "exclude": [
+      "node_modules/**",
+      ".git/**",
+      "tailwind.css",
+      "postcss.config.js",
+      "package.json",
+      "package-lock.json"
+    ]
+  },
+  "observability": {
+    "enabled": true
+  }
+}
