@@ -3,7 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 const pages = [
-  ['index.html', ['Better websites. Faster results.', 'How it works', 'Pricing preview', 'Frequently asked questions']],
+  ['index.html', ['Better websites. Faster results.', 'How We Work', 'Pricing preview', 'Frequently asked questions']],
   ['services.html', ['Custom website builds', 'Website maintenance', 'How we work', 'Who Bettrix helps']],
   ['portfolio.html', ['Portfolio', 'filter', 'Case studies', 'Results']],
   ['pricing.html', ['Starter', 'Business', 'Pro', 'Comparison', 'Pricing FAQ']],
@@ -25,7 +25,7 @@ for (const [file, needles] of pages) {
 
 test('shared assets define the Bettrix color system', async () => {
   const css = await readFile(new URL('../assets/styles.css', import.meta.url), 'utf8');
-  for (const token of ['#ffffff', '#f9fafb', '#1e3a5f', '#1a56db', '#0e9f6e', '#374151']) {
+  for (const token of ['#101415', '#e0e3e5', '#bcc7de', '#1e293b', '#b7c8e1', '#45474c']) {
     assert.ok(css.toLowerCase().includes(token), `Expected CSS token ${token}`);
   }
 });

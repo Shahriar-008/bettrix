@@ -122,6 +122,46 @@ const showcaseItems = [
 ];
 
 function showcaseMarkup() {
+  const mockupSVG = (name) => `
+    <svg viewBox="0 0 600 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+      <rect width="600" height="340" rx="8" fill="#131718"/>
+      <!-- Browser chrome -->
+      <rect width="600" height="32" rx="8" fill="#1a1e20"/>
+      <rect y="24" width="600" height="8" fill="#1a1e20"/>
+      <circle cx="16" cy="16" r="4" fill="#ff5f57" opacity="0.7"/>
+      <circle cx="32" cy="16" r="4" fill="#febc2e" opacity="0.7"/>
+      <circle cx="48" cy="16" r="4" fill="#28c840" opacity="0.7"/>
+      <rect x="120" y="8" width="360" height="16" rx="8" fill="#2e3234"/>
+      <text x="300" y="20" font-family="Plus Jakarta Sans, sans-serif" font-size="8" fill="#6b6f77" text-anchor="middle">${name.toLowerCase().replace(/\s/g, '')}.app</text>
+      <!-- Content skeleton -->
+      <rect x="24" y="52" width="160" height="12" rx="3" fill="#bcc7de" opacity="0.2"/>
+      <rect x="24" y="74" width="260" height="8" rx="2" fill="#45474c" opacity="0.4"/>
+      <rect x="24" y="90" width="220" height="8" rx="2" fill="#45474c" opacity="0.3"/>
+      <rect x="24" y="116" width="100" height="28" rx="6" fill="#1e293b" stroke="#bcc7de" stroke-width="0.5" opacity="0.8"/>
+      <text x="74" y="134" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#bcc7de" text-anchor="middle" opacity="0.8">Get Started</text>
+      <!-- Hero image area -->
+      <rect x="330" y="48" width="246" height="120" rx="6" fill="#1a1e20" stroke="#2e3234" stroke-width="0.5"/>
+      <rect x="346" y="64" width="100" height="6" rx="2" fill="#bcc7de" opacity="0.15"/>
+      <rect x="346" y="78" width="70" height="6" rx="2" fill="#45474c" opacity="0.2"/>
+      <rect x="346" y="100" width="214" height="52" rx="4" fill="#2e3234" opacity="0.5"/>
+      <!-- Cards row -->
+      <rect x="24" y="184" width="172" height="90" rx="6" fill="#1a1e20" stroke="#2e3234" stroke-width="0.5"/>
+      <rect x="40" y="200" width="80" height="6" rx="2" fill="#bcc7de" opacity="0.2"/>
+      <rect x="40" y="214" width="140" height="4" rx="2" fill="#45474c" opacity="0.2"/>
+      <rect x="40" y="226" width="120" height="4" rx="2" fill="#45474c" opacity="0.15"/>
+      <rect x="210" y="184" width="172" height="90" rx="6" fill="#1a1e20" stroke="#2e3234" stroke-width="0.5"/>
+      <rect x="226" y="200" width="80" height="6" rx="2" fill="#b7c8e1" opacity="0.2"/>
+      <rect x="226" y="214" width="140" height="4" rx="2" fill="#45474c" opacity="0.2"/>
+      <rect x="226" y="226" width="120" height="4" rx="2" fill="#45474c" opacity="0.15"/>
+      <rect x="396" y="184" width="172" height="90" rx="6" fill="#1a1e20" stroke="#2e3234" stroke-width="0.5"/>
+      <rect x="412" y="200" width="80" height="6" rx="2" fill="#bcc7de" opacity="0.2"/>
+      <rect x="412" y="214" width="140" height="4" rx="2" fill="#45474c" opacity="0.2"/>
+      <rect x="412" y="226" width="120" height="4" rx="2" fill="#45474c" opacity="0.15"/>
+      <!-- Footer -->
+      <rect x="24" y="296" width="552" height="24" rx="4" fill="#1a1e20" opacity="0.5"/>
+    </svg>
+  `;
+
   return `
     <div class="showcase-strip">
       <div class="section__header text-center mb-lg">
@@ -137,8 +177,8 @@ function showcaseMarkup() {
           .map(
             (item) => `
               <a class="glass-card p-lg rounded-xl group hover:border-primary/50 transition-all duration-300" href="${item.href}" target="_blank" rel="noopener noreferrer">
-                <div class="w-full aspect-video rounded-lg bg-gradient-to-br from-primary/10 via-surface-container to-tertiary/10 flex items-center justify-center mb-md border border-outline-variant/20">
-                  <span class="text-on-surface-variant font-body-sm">${item.name} Preview</span>
+                <div class="w-full aspect-video rounded-lg overflow-hidden mb-md border border-outline-variant/20">
+                  ${mockupSVG(item.name)}
                 </div>
                 <strong class="text-on-surface text-headline-sm">${item.name}</strong>
                 <p class="text-on-surface-variant font-body-sm text-body-sm mt-1">${new URL(item.href).hostname}</p>
