@@ -1,2 +1,4 @@
 node_modules/
 claude-execution.log
+.claude-fixes.log
+.claude-task.md
