@@ -11,41 +11,42 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body data-page="pricing">
     <div data-site-header></div>
     <main>
-      <section class="page-hero">
-        <div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-          <div class="lg:col-span-7 grid gap-lg">
-            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Pricing</div>
-            <h1>Transparent tiers that stay easy to compare.</h1>
-            <p class="text-on-surface-variant text-body-lg max-w-[62ch]">
+      <!-- Page Hero -->
+      <section class="relative pt-32 pb-lg px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+          <div class="lg:col-span-7">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-label-md text-label-md mb-md border border-primary/20">Pricing</span>
+            <h1 class="font-headline text-headline-lg-mobile md:text-headline-lg mb-md">Transparent tiers that stay easy to compare.</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-2xl">
               Bettrix pricing is designed to be straightforward so visitors can quickly see which
               package fits their business and budget.
             </p>
             <div class="flex flex-wrap gap-3">
-              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-primary shadow-bettrix-blue hover:-translate-y-0.5 transition-all" href="contact.html#booking">Book a discovery call</a>
-              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-on-surface border border-outline bg-white hover:bg-surface-container-low transition-all" href="services.html">Review services</a>
+              <a class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-bold hover:brightness-110 transition-all" href="contact.html#booking">Book a discovery call</a>
+              <a class="inline-flex items-center justify-center gap-2 border border-outline-variant text-on-surface px-8 py-4 rounded-lg font-bold hover:bg-surface-variant transition-all" href="services.html">Review services</a>
             </div>
           </div>
-          <div class="lg:col-span-5 relative grid gap-md">
-            <div class="glass-card p-lg" data-reveal>
-              <h3>Plan logic</h3>
+          <div class="lg:col-span-5 relative">
+            <div class="glass-card p-lg rounded-xl" data-reveal>
+              <h3 class="text-headline-sm mb-md">Plan logic</h3>
               <div class="grid gap-md">
-                <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-md">
-                  <strong>Starter</strong>
-                  <p class="text-on-surface-variant text-body-sm">Simple launch.</p>
+                <div class="bg-surface-container border border-outline-variant/20 rounded-xl p-md">
+                  <strong class="text-on-surface">Starter</strong>
+                  <p class="text-on-surface-variant font-body-sm text-body-sm">Simple launch.</p>
                 </div>
-                <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-md">
-                  <strong>Business</strong>
-                  <p class="text-on-surface-variant text-body-sm">Most common choice.</p>
+                <div class="bg-surface-container border border-outline-variant/20 rounded-xl p-md">
+                  <strong class="text-on-surface">Business</strong>
+                  <p class="text-on-surface-variant font-body-sm text-body-sm">Most common choice.</p>
                 </div>
-                <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-md">
-                  <strong>Pro</strong>
-                  <p class="text-on-surface-variant text-body-sm">Advanced support.</p>
+                <div class="bg-surface-container border border-outline-variant/20 rounded-xl p-md">
+                  <strong class="text-on-surface">Pro</strong>
+                  <p class="text-on-surface-variant font-body-sm text-body-sm">Advanced support.</p>
                 </div>
               </div>
             </div>
@@ -53,161 +54,177 @@
         </div>
       </section>
 
-      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="container">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <h3>Starter</h3>
-              <p class="text-on-surface-variant text-body-sm">For a simple web presence. 5–7 day delivery.</p>
-              <div class="flex items-baseline gap-1 my-md"><strong class="text-4xl text-on-surface tracking-tight">$199</strong><span class="text-on-surface-variant">1–3 page site</span></div>
-              <ul class="mt-3 ps-5 text-on-surface-variant text-body-sm grid gap-2">
-                <li>1–3 page website with clean layout</li>
-                <li>Core branding and contact path</li>
-                <li>Light launch support</li>
+      <!-- Pricing Cards -->
+      <section class="py-xl section-soft">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <article class="glass-card p-lg rounded-xl" data-reveal>
+              <h3 class="text-on-surface">Starter</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">For a simple web presence. 5–7 day delivery.</p>
+              <div class="flex items-baseline gap-1 my-md">
+                <strong class="text-4xl text-on-surface tracking-tight">$199</strong>
+                <span class="text-on-surface-variant font-body-sm">1–3 page site</span>
+              </div>
+              <ul class="mt-3 space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 1–3 page website with clean layout</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Core branding and contact path</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Light launch support</li>
               </ul>
-              <div class="flex flex-wrap gap-3">
-                <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-on-surface border border-outline bg-white hover:bg-surface-container-low transition-all" href="contact.html#booking">Discuss Starter</a>
+              <div class="flex flex-wrap gap-3 mt-md">
+                <a class="inline-flex items-center justify-center gap-2 border border-outline-variant text-on-surface px-6 py-3 rounded-lg font-bold hover:bg-surface-variant transition-all w-full text-center" href="contact.html#booking">Discuss Starter</a>
               </div>
             </article>
 
-            <article class="bg-surface border border-primary/35 rounded-2xl shadow-bettrix-lg -translate-y-1 p-lg" data-reveal>
-              <h3>Business</h3>
-              <p class="text-on-surface-variant text-body-sm">Best for most growing brands. 10–14 day delivery.</p>
-              <div class="flex items-baseline gap-1 my-md"><strong class="text-4xl text-on-surface tracking-tight">$399</strong><span class="text-on-surface-variant">Up to 6 pages</span></div>
-              <ul class="mt-3 ps-5 text-on-surface-variant text-body-sm grid gap-2">
-                <li>Up to six-page marketing site</li>
-                <li>Trust blocks, FAQs, and case studies</li>
-                <li>Ongoing maintenance support</li>
+            <article class="glass-card p-lg rounded-xl border-primary/35 scale-105 z-10 bg-surface-container-low shadow-2xl" data-reveal>
+              <h3 class="text-on-surface">Business</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">Best for most growing brands. 10–14 day delivery.</p>
+              <div class="flex items-baseline gap-1 my-md">
+                <strong class="text-4xl text-on-surface tracking-tight">$399</strong>
+                <span class="text-on-surface-variant font-body-sm">Up to 6 pages</span>
+              </div>
+              <ul class="mt-3 space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to six-page marketing site</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Trust blocks, FAQs, and case studies</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Ongoing maintenance support</li>
               </ul>
-              <div class="flex flex-wrap gap-3">
-                <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-primary shadow-bettrix-blue hover:-translate-y-0.5 transition-all" href="contact.html#booking">Choose Business</a>
+              <div class="flex flex-wrap gap-3 mt-md">
+                <a class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container px-6 py-3 rounded-lg font-bold hover:brightness-110 transition-all w-full text-center" href="contact.html#booking">Choose Business</a>
               </div>
             </article>
 
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <h3>Pro</h3>
-              <p class="text-on-surface-variant text-body-sm">Custom design with ongoing support. 2–3 week delivery.</p>
-              <div class="flex items-baseline gap-1 my-md"><strong class="text-4xl text-on-surface tracking-tight">$699</strong><span class="text-on-surface-variant">Custom design + support</span></div>
-              <ul class="mt-3 ps-5 text-on-surface-variant text-body-sm grid gap-2">
-                <li>Custom design with expanded pages</li>
-                <li>Priority turnaround and communication</li>
-                <li>Deep maintenance partnership</li>
+            <article class="glass-card p-lg rounded-xl" data-reveal>
+              <h3 class="text-on-surface">Pro</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">Custom design with ongoing support. 2–3 week delivery.</p>
+              <div class="flex items-baseline gap-1 my-md">
+                <strong class="text-4xl text-on-surface tracking-tight">$699</strong>
+                <span class="text-on-surface-variant font-body-sm">Custom design + support</span>
+              </div>
+              <ul class="mt-3 space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom design with expanded pages</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Priority turnaround and communication</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Deep maintenance partnership</li>
               </ul>
-              <div class="flex flex-wrap gap-3">
-                <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-on-surface border border-outline bg-white hover:bg-surface-container-low transition-all" href="contact.html#booking">Discuss Pro</a>
+              <div class="flex flex-wrap gap-3 mt-md">
+                <a class="inline-flex items-center justify-center gap-2 border border-outline-variant text-on-surface px-6 py-3 rounded-lg font-bold hover:bg-surface-variant transition-all w-full text-center" href="contact.html#booking">Discuss Pro</a>
               </div>
             </article>
           </div>
-          <p class="text-on-surface-variant text-body-sm text-center mt-3">All prices are negotiable based on project scope.</p>
+          <p class="text-on-surface-variant font-body-sm text-body-sm text-center mt-3">All prices are negotiable based on project scope.</p>
         </div>
       </section>
 
-      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="container">
-          <div class="grid gap-md mb-2xl">
+      <!-- Comparison Table -->
+      <section class="py-xl">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="text-center mb-lg">
             <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Comparison</div>
             <h2>What changes between the packages.</h2>
           </div>
-          <table class="w-full border-collapse overflow-hidden rounded-2xl border border-outline bg-surface" data-reveal>
-            <thead>
-              <tr>
-                <th class="p-md text-left border-b border-outline text-on-surface bg-surface-container-low">Feature</th>
-                <th class="p-md text-center border-b border-outline text-on-surface bg-surface-container-low">Starter</th>
-                <th class="p-md text-center border-b border-outline text-on-surface bg-surface-container-low">Business</th>
-                <th class="p-md text-center border-b border-outline text-on-surface bg-surface-container-low">Pro</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="p-md text-left border-b border-outline text-on-surface-variant">Page count</td>
-                <td class="p-md text-center border-b border-outline text-on-surface-variant">1-3</td>
-                <td class="p-md text-center border-b border-outline text-on-surface-variant">6</td>
-                <td class="p-md text-center border-b border-outline text-on-surface-variant">Custom</td>
-              </tr>
-              <tr>
-                <td class="p-md text-left border-b border-outline text-on-surface-variant">Strategy and copy</td>
-                <td class="p-md text-center border-b border-outline text-on-surface-variant">Basic</td>
-                <td class="p-md text-center border-b border-outline text-on-surface-variant">Included</td>
-                <td class="p-md text-center border-b border-outline text-on-surface-variant">Included</td>
-              </tr>
-              <tr>
-                <td class="p-md text-left border-b border-outline text-on-surface-variant">Case studies / FAQs</td>
-                <td class="p-md text-center border-b border-outline text-on-surface-variant">Optional</td>
-                <td class="p-md text-center border-b border-outline text-on-surface-variant">Included</td>
-                <td class="p-md text-center border-b border-outline text-on-surface-variant">Included</td>
-              </tr>
-              <tr>
-                <td class="p-md text-left border-b border-outline text-on-surface-variant">Maintenance</td>
-                <td class="p-md text-center border-b border-outline text-on-surface-variant">Light support</td>
-                <td class="p-md text-center border-b border-outline text-on-surface-variant">Included</td>
-                <td class="p-md text-center border-b border-outline text-on-surface-variant">Priority support</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse overflow-hidden rounded-xl border border-outline-variant/30 bg-surface-container" data-reveal>
+              <thead>
+                <tr>
+                  <th class="p-md text-left border-b border-outline-variant/30 text-on-surface bg-surface-container-high font-semibold">Feature</th>
+                  <th class="p-md text-center border-b border-outline-variant/30 text-on-surface bg-surface-container-high font-semibold">Starter</th>
+                  <th class="p-md text-center border-b border-outline-variant/30 text-on-surface bg-surface-container-high font-semibold">Business</th>
+                  <th class="p-md text-center border-b border-outline-variant/30 text-on-surface bg-surface-container-high font-semibold">Pro</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-md text-left border-b border-outline-variant/20 text-on-surface-variant">Page count</td>
+                  <td class="p-md text-center border-b border-outline-variant/20 text-on-surface-variant">1-3</td>
+                  <td class="p-md text-center border-b border-outline-variant/20 text-on-surface-variant">6</td>
+                  <td class="p-md text-center border-b border-outline-variant/20 text-on-surface-variant">Custom</td>
+                </tr>
+                <tr>
+                  <td class="p-md text-left border-b border-outline-variant/20 text-on-surface-variant">Strategy and copy</td>
+                  <td class="p-md text-center border-b border-outline-variant/20 text-on-surface-variant">Basic</td>
+                  <td class="p-md text-center border-b border-outline-variant/20 text-on-surface-variant">Included</td>
+                  <td class="p-md text-center border-b border-outline-variant/20 text-on-surface-variant">Included</td>
+                </tr>
+                <tr>
+                  <td class="p-md text-left border-b border-outline-variant/20 text-on-surface-variant">Case studies / FAQs</td>
+                  <td class="p-md text-center border-b border-outline-variant/20 text-on-surface-variant">Optional</td>
+                  <td class="p-md text-center border-b border-outline-variant/20 text-on-surface-variant">Included</td>
+                  <td class="p-md text-center border-b border-outline-variant/20 text-on-surface-variant">Included</td>
+                </tr>
+                <tr>
+                  <td class="p-md text-left text-on-surface-variant">Maintenance</td>
+                  <td class="p-md text-center text-on-surface-variant">Light support</td>
+                  <td class="p-md text-center text-on-surface-variant">Included</td>
+                  <td class="p-md text-center text-on-surface-variant">Priority support</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
-      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="container">
-          <div class="grid gap-md mb-2xl">
+      <!-- What's Included -->
+      <section class="py-xl section-soft">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="text-center mb-lg">
             <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">What's included in every plan</div>
             <h2>The core experience stays consistent.</h2>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <h3>Professional structure</h3>
-              <p class="text-on-surface-variant text-body-sm">Clean hierarchy, strong typography, and a credible layout.</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <article class="glass-card p-lg rounded-xl" data-reveal>
+              <h3 class="text-on-surface">Professional structure</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">Clean hierarchy, strong typography, and a credible layout.</p>
             </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <h3>Responsive delivery</h3>
-              <p class="text-on-surface-variant text-body-sm">Works smoothly across mobile, tablet, and desktop.</p>
+            <article class="glass-card p-lg rounded-xl" data-reveal>
+              <h3 class="text-on-surface">Responsive delivery</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">Works smoothly across mobile, tablet, and desktop.</p>
             </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <h3>Fast communication</h3>
-              <p class="text-on-surface-variant text-body-sm">A simple process, clear milestones, and direct contact.</p>
+            <article class="glass-card p-lg rounded-xl" data-reveal>
+              <h3 class="text-on-surface">Fast communication</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">A simple process, clear milestones, and direct contact.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="container">
-          <div class="grid gap-md mb-2xl">
+      <!-- Pricing FAQ -->
+      <section class="py-xl">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="text-center mb-lg">
             <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Pricing FAQ</div>
             <h2>Common questions about scope and support.</h2>
           </div>
-          <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
+          <div class="glass-card p-lg rounded-xl max-w-3xl mx-auto" data-reveal>
             <details open>
               <summary class="cursor-pointer text-on-surface font-semibold list-none">Can I start small and upgrade later?</summary>
-              <p class="mt-3 text-on-surface-variant text-body-sm">Yes. The packages are structured so the site can grow when your needs do.</p>
+              <p class="mt-3 text-on-surface-variant font-body-sm text-body-sm">Yes. The packages are structured so the site can grow when your needs do.</p>
             </details>
-            <hr class="my-3 border-outline/50" />
+            <hr class="my-3 border-outline/30" />
             <details>
               <summary class="cursor-pointer text-on-surface font-semibold list-none">Do the prices include maintenance?</summary>
-              <p class="mt-3 text-on-surface-variant text-body-sm">Maintenance is included where it makes sense and expanded in the larger tiers.</p>
+              <p class="mt-3 text-on-surface-variant font-body-sm text-body-sm">Maintenance is included where it makes sense and expanded in the larger tiers.</p>
             </details>
-            <hr class="my-3 border-outline/50" />
+            <hr class="my-3 border-outline/30" />
             <details>
               <summary class="cursor-pointer text-on-surface font-semibold list-none">What if I need a faster turnaround?</summary>
-              <p class="mt-3 text-on-surface-variant text-body-sm">The Pro tier is designed for tighter timelines and more hands-on support.</p>
+              <p class="mt-3 text-on-surface-variant font-body-sm text-body-sm">The Pro tier is designed for tighter timelines and more hands-on support.</p>
             </details>
-            <hr class="my-3 border-outline/50" />
+            <hr class="my-3 border-outline/30" />
             <details>
               <summary class="cursor-pointer text-on-surface font-semibold list-none">Do I need finished content before I contact you?</summary>
-              <p class="mt-3 text-on-surface-variant text-body-sm">No. Bettrix can help shape the content and structure during the call.</p>
+              <p class="mt-3 text-on-surface-variant font-body-sm text-body-sm">No. Bettrix can help shape the content and structure during the call.</p>
             </details>
           </div>
         </div>
       </section>
 
-      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="container">
-          <div class="cta-band" data-reveal>
+      <!-- CTA Band -->
+      <section class="py-xl">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="cta-band glass-card p-lg md:p-xl rounded-2xl" data-reveal>
             <div class="grid gap-md">
               <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Let's talk numbers</div>
               <h2>Book a discovery call and we'll point you to the right tier.</h2>
             </div>
-            <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-primary shadow-bettrix-blue hover:-translate-y-0.5 transition-all" href="contact.html#booking">Book a discovery call</a>
+            <a class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-bold hover:brightness-110 transition-all" href="contact.html#booking">Book a discovery call</a>
           </div>
         </div>
       </section>

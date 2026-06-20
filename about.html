@@ -11,40 +11,41 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body data-page="about">
     <div data-site-header></div>
     <main>
-      <section class="page-hero">
-        <div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-          <div class="lg:col-span-7 grid gap-lg">
-            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">About</div>
-            <h1>A small agency with a simple promise.</h1>
-            <p class="text-on-surface-variant text-body-lg max-w-[62ch]">
+      <!-- Page Hero -->
+      <section class="relative pt-32 pb-lg px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+          <div class="lg:col-span-7">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-label-md text-label-md mb-md border border-primary/20">About</span>
+            <h1 class="font-headline text-headline-lg-mobile md:text-headline-lg mb-md">A small agency with a simple promise.</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-2xl">
               Bettrix exists to help businesses get a better website without wasting time, energy, or
               budget on a bloated process.
             </p>
             <div class="flex flex-wrap gap-3">
-              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-primary shadow-bettrix-blue hover:-translate-y-0.5 transition-all" href="contact.html#booking">Book a discovery call</a>
-              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-on-surface border border-outline bg-white hover:bg-surface-container-low transition-all" href="services.html">See services</a>
+              <a class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-bold hover:brightness-110 transition-all" href="contact.html#booking">Book a discovery call</a>
+              <a class="inline-flex items-center justify-center gap-2 border border-outline-variant text-on-surface px-8 py-4 rounded-lg font-bold hover:bg-surface-variant transition-all" href="services.html">See services</a>
             </div>
           </div>
-          <div class="lg:col-span-5 relative grid gap-md">
-            <div class="glass-card p-lg" data-reveal>
+          <div class="lg:col-span-5 relative">
+            <div class="glass-card p-lg rounded-xl" data-reveal>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-                <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2">
+                <div class="bg-surface-container border border-outline-variant/20 rounded-xl p-md grid gap-2 text-center">
                   <strong class="text-on-surface text-xl tracking-tight">Speed</strong>
-                  <span class="text-on-surface-variant text-body-sm">Fast communication and fast delivery.</span>
+                  <span class="text-on-surface-variant font-body-sm text-body-sm">Fast communication and fast delivery.</span>
                 </div>
-                <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2">
+                <div class="bg-surface-container border border-outline-variant/20 rounded-xl p-md grid gap-2 text-center">
                   <strong class="text-on-surface text-xl tracking-tight">Clarity</strong>
-                  <span class="text-on-surface-variant text-body-sm">Simple plans and simple next steps.</span>
+                  <span class="text-on-surface-variant font-body-sm text-body-sm">Simple plans and simple next steps.</span>
                 </div>
-                <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2">
+                <div class="bg-surface-container border border-outline-variant/20 rounded-xl p-md grid gap-2 text-center">
                   <strong class="text-on-surface text-xl tracking-tight">Support</strong>
-                  <span class="text-on-surface-variant text-body-sm">Help after launch, not just before it.</span>
+                  <span class="text-on-surface-variant font-body-sm text-body-sm">Help after launch, not just before it.</span>
                 </div>
               </div>
             </div>
@@ -52,118 +53,123 @@
         </div>
       </section>
 
-      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
-          <div class="grid gap-md mb-2xl">
+      <!-- Brand Story -->
+      <section class="py-xl section-soft">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="text-center mb-lg">
             <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Brand story</div>
             <h2>Why Bettrix exists.</h2>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <h3>Most websites are overcomplicated</h3>
-              <p class="text-on-surface-variant text-body-sm">Too much fluff, too little clarity, and not enough focus on action.</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <article class="glass-card p-lg rounded-xl" data-reveal>
+              <h3 class="text-on-surface">Most websites are overcomplicated</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">Too much fluff, too little clarity, and not enough focus on action.</p>
             </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <h3>Businesses still need speed</h3>
-              <p class="text-on-surface-variant text-body-sm">The agency process should feel fast enough for startups and practical enough for established teams.</p>
+            <article class="glass-card p-lg rounded-xl" data-reveal>
+              <h3 class="text-on-surface">Businesses still need speed</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">The agency process should feel fast enough for startups and practical enough for established teams.</p>
             </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <h3>Support should continue after launch</h3>
-              <p class="text-on-surface-variant text-body-sm">Maintenance matters just as much as the initial build.</p>
+            <article class="glass-card p-lg rounded-xl" data-reveal>
+              <h3 class="text-on-surface">Support should continue after launch</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">Maintenance matters just as much as the initial build.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
-          <div class="grid gap-md mb-2xl">
+      <!-- Values -->
+      <section class="py-xl">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="text-center mb-lg">
             <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Values</div>
             <h2>What Bettrix is built around.</h2>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">1</div>
-              <h3>Speed</h3>
-              <p class="text-on-surface-variant text-body-sm">Move quickly without losing the essentials.</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <article class="glass-card p-lg rounded-xl" data-reveal>
+              <div class="w-12 h-12 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold text-lg">1</div>
+              <h3 class="text-on-surface">Speed</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">Move quickly without losing the essentials.</p>
             </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">2</div>
-              <h3>Clarity</h3>
-              <p class="text-on-surface-variant text-body-sm">Keep the message simple, direct, and useful.</p>
+            <article class="glass-card p-lg rounded-xl" data-reveal>
+              <div class="w-12 h-12 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold text-lg">2</div>
+              <h3 class="text-on-surface">Clarity</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">Keep the message simple, direct, and useful.</p>
             </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">3</div>
-              <h3>Affordability</h3>
-              <p class="text-on-surface-variant text-body-sm">Offer real value without overengineering the process.</p>
+            <article class="glass-card p-lg rounded-xl" data-reveal>
+              <div class="w-12 h-12 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold text-lg">3</div>
+              <h3 class="text-on-surface">Affordability</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">Offer real value without overengineering the process.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
-          <div class="grid gap-md mb-2xl">
+      <!-- Process -->
+      <section class="py-xl section-soft">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="text-center mb-lg">
             <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Process</div>
             <h2>A working style that stays easy to follow.</h2>
           </div>
-          <div class="grid gap-3">
-            <div class="grid grid-cols-[auto_1fr] gap-md p-md rounded-xl bg-surface-container-low border border-outline" data-reveal>
-              <div class="w-10 h-10 rounded-full grid place-items-center text-white font-bold bg-primary">1</div>
+          <div class="grid gap-3 max-w-3xl mx-auto">
+            <div class="grid grid-cols-[auto_1fr] gap-md p-md rounded-xl bg-surface-container border border-outline-variant/20" data-reveal>
+              <div class="w-10 h-10 rounded-full grid place-items-center font-bold bg-primary text-on-primary">1</div>
               <div>
-                <h3>Listen first</h3>
-                <p class="text-on-surface-variant text-body-sm">We learn what the business needs and what the website must do.</p>
+                <h3 class="text-headline-sm">Listen first</h3>
+                <p class="text-on-surface-variant font-body-sm text-body-sm">We learn what the business needs and what the website must do.</p>
               </div>
             </div>
-            <div class="grid grid-cols-[auto_1fr] gap-md p-md rounded-xl bg-surface-container-low border border-outline" data-reveal>
-              <div class="w-10 h-10 rounded-full grid place-items-center text-white font-bold bg-primary">2</div>
+            <div class="grid grid-cols-[auto_1fr] gap-md p-md rounded-xl bg-surface-container border border-outline-variant/20" data-reveal>
+              <div class="w-10 h-10 rounded-full grid place-items-center font-bold bg-primary text-on-primary">2</div>
               <div>
-                <h3>Make decisions early</h3>
-                <p class="text-on-surface-variant text-body-sm">We keep the scope and structure tight so the project stays moving.</p>
+                <h3 class="text-headline-sm">Make decisions early</h3>
+                <p class="text-on-surface-variant font-body-sm text-body-sm">We keep the scope and structure tight so the project stays moving.</p>
               </div>
             </div>
-            <div class="grid grid-cols-[auto_1fr] gap-md p-md rounded-xl bg-surface-container-low border border-outline" data-reveal>
-              <div class="w-10 h-10 rounded-full grid place-items-center text-white font-bold bg-primary">3</div>
+            <div class="grid grid-cols-[auto_1fr] gap-md p-md rounded-xl bg-surface-container border border-outline-variant/20" data-reveal>
+              <div class="w-10 h-10 rounded-full grid place-items-center font-bold bg-primary text-on-primary">3</div>
               <div>
-                <h3>Stay available after launch</h3>
-                <p class="text-on-surface-variant text-body-sm">Maintenance and updates are part of the relationship.</p>
+                <h3 class="text-headline-sm">Stay available after launch</h3>
+                <p class="text-on-surface-variant font-body-sm text-body-sm">Maintenance and updates are part of the relationship.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
-          <div class="grid gap-md mb-2xl">
+      <!-- Trusted By -->
+      <section class="py-xl">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="text-center mb-lg">
             <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Trusted by</div>
             <h2>Clients across business types and stages.</h2>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2" data-reveal>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <article class="glass-card p-lg rounded-xl text-center" data-reveal>
               <strong class="text-on-surface text-xl tracking-tight">Startups</strong>
-              <span class="text-on-surface-variant text-body-sm">Need a site that can launch fast.</span>
+              <span class="block text-on-surface-variant font-body-sm text-body-sm mt-2">Need a site that can launch fast.</span>
             </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2" data-reveal>
+            <article class="glass-card p-lg rounded-xl text-center" data-reveal>
               <strong class="text-on-surface text-xl tracking-tight">Local businesses</strong>
-              <span class="text-on-surface-variant text-body-sm">Need clarity and trust in one place.</span>
+              <span class="block text-on-surface-variant font-body-sm text-body-sm mt-2">Need clarity and trust in one place.</span>
             </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2" data-reveal>
+            <article class="glass-card p-lg rounded-xl text-center" data-reveal>
               <strong class="text-on-surface text-xl tracking-tight">Mid-size teams</strong>
-              <span class="text-on-surface-variant text-body-sm">Need a site that can keep evolving.</span>
+              <span class="block text-on-surface-variant font-body-sm text-body-sm mt-2">Need a site that can keep evolving.</span>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
-          <div class="cta-band" data-reveal>
+      <!-- CTA Band -->
+      <section class="py-xl">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="cta-band glass-card p-lg md:p-xl rounded-2xl" data-reveal>
             <div class="grid gap-md">
               <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Meet Bettrix</div>
               <h2>Better websites. Faster results. The work should feel that simple.</h2>
             </div>
-            <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-primary shadow-bettrix-blue hover:-translate-y-0.5 transition-all" href="contact.html#booking">Book a discovery call</a>
+            <a class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-bold hover:brightness-110 transition-all" href="contact.html#booking">Book a discovery call</a>
           </div>
         </div>
       </section>

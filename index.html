@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles.css" />
@@ -20,297 +20,251 @@
   <body data-page="home">
     <div data-site-header></div>
     <main>
-      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-          <div class="lg:col-span-7 grid gap-lg">
-            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Affordable & fast web design</div>
-            <h1>Better websites. Faster results.</h1>
-            <p class="text-on-surface-variant text-body-lg max-w-[62ch]">
-              Bettrix builds fast, professional websites for small businesses and startups in Bangladesh — so you get more customers, not just a pretty site.
+      <!-- Hero Section -->
+      <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+          <div class="lg:col-span-7">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-label-md text-label-md mb-md border border-primary/20">NEXT-GEN WEB SOLUTIONS</span>
+            <h1 class="font-headline text-headline-lg-mobile md:text-headline-lg mb-md text-on-surface">
+              Design that Drives <span class="text-gradient">Business Growth</span>
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-2xl">
+              We build high-performance websites that convert visitors into customers through technical precision and clean design.
             </p>
-            <div class="flex flex-wrap gap-3">
-              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-primary shadow-bettrix-blue hover:-translate-y-0.5 transition-all" href="contact.html#booking">Book a discovery call</a>
-              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-on-surface border border-outline bg-white hover:bg-surface-container-low transition-all" href="pricing.html">View pricing</a>
-            </div>
-            <div class="grid grid-cols-3 gap-md mt-2">
-              <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-md">
-                <strong class="block text-on-surface text-xl tracking-tight">Fast</strong>
-                <span class="text-on-surface-variant text-body-sm">Clear timelines and quick delivery.</span>
-              </div>
-              <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-md">
-                <strong class="block text-on-surface text-xl tracking-tight">Affordable</strong>
-                <span class="text-on-surface-variant text-body-sm">Simple packages for every stage.</span>
-              </div>
-              <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-md">
-                <strong class="block text-on-surface text-xl tracking-tight">Ongoing</strong>
-                <span class="text-on-surface-variant text-body-sm">Maintenance and support included.</span>
-              </div>
+            <div class="flex flex-wrap gap-4">
+              <a class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all" href="portfolio.html">View Our Work</a>
+              <a class="inline-flex items-center justify-center gap-2 border border-outline-variant text-on-surface px-8 py-4 rounded-lg font-bold text-lg hover:bg-surface-variant transition-all" href="#process">Our Process</a>
             </div>
           </div>
-          <div class="lg:col-span-5 relative grid gap-md">
-            <div class="glass-card p-lg" data-reveal>
-              <div class="grid grid-cols-2 gap-3">
-                <div class="rounded-xl p-md border border-primary/10 bg-gradient-to-br from-primary/10 to-tertiary/10">
-                  <span class="inline-flex mb-3 px-2 py-0.5 rounded-full text-label-sm font-bold uppercase text-primary bg-primary/10">Conversion</span>
-                  <h3>Lead-focused homepage</h3>
-                  <p class="text-on-surface-variant text-body-sm">Clear CTA, social proof, and fast routing to contact.</p>
-                </div>
-                <div class="rounded-xl p-md border border-primary/10 bg-gradient-to-b from-white to-blue-50/50">
-                  <span class="inline-flex mb-3 px-2 py-0.5 rounded-full text-label-sm font-bold uppercase text-primary bg-primary/10">Trust</span>
-                  <h3>Proof-heavy layout</h3>
-                  <p class="text-on-surface-variant text-body-sm">Logos, stats, testimonials, and case studies.</p>
-                </div>
-                <div class="rounded-xl p-md border border-primary/10 bg-gradient-to-b from-white to-blue-50/50">
-                  <span class="inline-flex mb-3 px-2 py-0.5 rounded-full text-label-sm font-bold uppercase text-primary bg-primary/10">Speed</span>
-                  <h3>Mobile-first structure</h3>
-                  <p class="text-on-surface-variant text-body-sm">Built to stay clean and readable on every device.</p>
-                </div>
-                <div class="rounded-xl p-md border border-primary/10 bg-gradient-to-br from-primary/10 to-tertiary/10">
-                  <span class="inline-flex mb-3 px-2 py-0.5 rounded-full text-label-sm font-bold uppercase text-primary bg-primary/10">Support</span>
-                  <h3>Maintenance-ready</h3>
-                  <p class="text-on-surface-variant text-body-sm">Designed for long-term updates, not one-off launches.</p>
-                </div>
+          <div class="lg:col-span-5 hidden lg:block relative">
+            <div class="relative w-full aspect-square glass-card rounded-xl overflow-hidden p-4">
+              <div class="w-full h-full rounded-lg bg-gradient-to-br from-primary/20 via-surface-container to-tertiary/20 flex items-center justify-center">
+                <span class="text-on-surface-variant font-headline text-headline-sm">Premium Web Design</span>
               </div>
+            </div>
+            <!-- Floating Stat Card -->
+            <div class="absolute -bottom-6 -left-6 glass-card p-6 rounded-xl border-l-4 border-l-tertiary">
+              <div class="font-headline text-headline-sm text-tertiary font-bold">+124%</div>
+              <div class="font-label-md text-label-md text-on-surface-variant uppercase">More Leads</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto grid gap-md p-lg rounded-3xl bg-surface-container-low border border-outline" data-reveal>
-          <div class="grid gap-md">
-            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Trusted by growing teams</div>
-            <p class="text-on-surface-variant text-body-lg"><strong>Currently accepting new clients — limited spots available each month.</strong></p>
+      <!-- Services Section -->
+      <section class="py-xl bg-surface-container-lowest" id="services">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="text-center mb-xl">
+            <h2 class="font-headline text-headline-md md:text-headline-lg text-on-surface mb-sm">Expert Solutions</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">Specialized services designed to grow your business online.</p>
           </div>
-        </div>
-      </section>
-
-      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto" data-site-showcase></div>
-      </section>
-
-      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto">
-          <div class="grid gap-md mb-2xl">
-            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Services snapshot</div>
-            <h2>Two core offers, presented clearly.</h2>
-            <p class="text-on-surface-variant max-w-[56ch]">
-              The homepage quickly shows what Bettrix builds and how long-term support works.
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">01</div>
-              <h3>Custom website builds</h3>
-              <p class="text-on-surface-variant text-body-sm">
-                Strategy-led sites for businesses that need a strong launch, better positioning, and a
-                cleaner path to leads.
-              </p>
-            </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">02</div>
-              <h3>Website maintenance</h3>
-              <p class="text-on-surface-variant text-body-sm">
-                Reliable updates, fixes, content changes, and ongoing care so the site stays fast and
-                secure.
-              </p>
-            </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">03</div>
-              <h3>Conversion structure</h3>
-              <p class="text-on-surface-variant text-body-sm">
-                Copy, layout, and CTA strategy that helps visitors move from interest to action with less
-                friction.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto">
-          <div class="grid gap-md mb-2xl">
-            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">How it works</div>
-            <h2>Simple steps, fast momentum.</h2>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">1</div>
-              <h3>Discover</h3>
-              <p class="text-on-surface-variant text-body-sm">We clarify the audience, offer, pages, and deadline.</p>
-            </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">2</div>
-              <h3>Design & build</h3>
-              <p class="text-on-surface-variant text-body-sm">We turn the strategy into a clean responsive website.</p>
-            </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <div class="w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold">3</div>
-              <h3>Launch & maintain</h3>
-              <p class="text-on-surface-variant text-body-sm">We go live, then keep the site current with ongoing support.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto">
-          <div class="grid gap-md mb-2xl">
-            <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Portfolio highlights</div>
-            <h2>Results that make the service feel real.</h2>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-3" data-reveal>
-              <div class="flex flex-wrap gap-2">
-                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Startup</span>
-                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Launch</span>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <!-- Service 1: Web Design -->
+            <div class="glass-card p-10 rounded-2xl group hover:border-primary/50 transition-all duration-300" data-reveal>
+              <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-lg border border-primary/20 group-hover:bg-primary-container transition-colors">
+                <svg class="w-8 h-8 text-primary group-hover:text-on-primary-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
               </div>
-              <h3>New product site in two weeks</h3>
-              <p class="text-on-surface-variant text-body-sm">A clean launch page, clear offer hierarchy, and stronger signup flow.</p>
-              <ul class="mt-3 ps-5 text-on-surface-variant text-body-sm grid gap-2">
-                <li>Problem: weak first impression</li>
-                <li>Solution: simplified structure and stronger CTA</li>
-                <li>Result: faster launch and clearer sales story</li>
+              <h3 class="font-headline text-headline-sm text-on-surface mb-md">Web Design</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-lg">Strategy-led sites for businesses that need a strong launch, better positioning, and a cleaner path to leads.</p>
+              <ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Responsive Layouts</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Interactive UI</li>
               </ul>
-            </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-3" data-reveal>
-              <div class="flex flex-wrap gap-2">
-                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Local business</span>
-                <span class="inline-flex items-center px-2 py-1 rounded-full text-primary bg-primary/10 text-label-sm font-bold uppercase tracking-wide">Service</span>
+            </div>
+            <!-- Service 2: E-commerce (FEATURED) -->
+            <div class="glass-card p-10 rounded-2xl group hover:border-primary/50 transition-all duration-300 scale-105 z-10 bg-surface-container-low shadow-2xl" data-reveal>
+              <div class="w-14 h-14 bg-tertiary/10 rounded-lg flex items-center justify-center mb-lg border border-tertiary/20 group-hover:bg-tertiary-container transition-colors">
+                <svg class="w-8 h-8 text-tertiary group-hover:text-on-tertiary-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
               </div>
-              <h3>Higher-quality enquiries for a service brand</h3>
-              <p class="text-on-surface-variant text-body-sm">Focused service pages and trust signals for visitors who compare options.</p>
-              <ul class="mt-3 ps-5 text-on-surface-variant text-body-sm grid gap-2">
-                <li>Problem: visitors left before contacting</li>
-                <li>Solution: proof-first homepage and pricing preview</li>
-                <li>Result: stronger enquiries from qualified leads</li>
+              <h3 class="font-headline text-headline-sm text-on-surface mb-md">E-commerce</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-lg">Scalable shopping experiences built for speed, security, and seamless checkout optimization.</p>
+              <ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Payment Integration</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Product Management</li>
               </ul>
-            </article>
+            </div>
+            <!-- Service 3: Strategy -->
+            <div class="glass-card p-10 rounded-2xl group hover:border-primary/50 transition-all duration-300" data-reveal>
+              <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-lg border border-primary/20 group-hover:bg-primary-container transition-colors">
+                <svg class="w-8 h-8 text-primary group-hover:text-on-primary-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line></svg>
+              </div>
+              <h3 class="font-headline text-headline-sm text-on-surface mb-md">Strategy</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-lg">Data-driven growth planning that aligns your digital presence with your long-term business goals.</p>
+              <ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Market Analysis</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> SEO Frameworks</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto">
-          <div class="grid gap-md mb-2xl">
+      <!-- Process Section -->
+      <section class="py-xl" id="process">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+            <div>
+              <span class="text-tertiary font-label-md text-label-md tracking-widest uppercase mb-sm block">How We Work</span>
+              <h2 class="font-headline text-headline-md md:text-headline-lg text-on-surface mb-lg leading-tight">A Proven Process for <span class="text-primary">Exceptional Results</span></h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">We don't just design; we architect digital solutions using a rigorous four-stage methodology that guarantees quality and efficiency.</p>
+              <div class="space-y-lg">
+                <!-- Step 1 -->
+                <div class="flex gap-lg" data-reveal>
+                  <div class="flex-shrink-0 w-12 h-12 rounded-full border border-primary text-primary flex items-center justify-center font-bold text-xl">01</div>
+                  <div>
+                    <h4 class="font-headline text-headline-sm text-on-surface mb-2">Discovery</h4>
+                    <p class="font-body-md text-body-md text-on-surface-variant">We clarify the audience, offer, pages, and deadline.</p>
+                  </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex gap-lg" data-reveal>
+                  <div class="flex-shrink-0 w-12 h-12 rounded-full border border-primary text-primary flex items-center justify-center font-bold text-xl">02</div>
+                  <div>
+                    <h4 class="font-headline text-headline-sm text-on-surface mb-2">Design</h4>
+                    <p class="font-body-md text-body-md text-on-surface-variant">We turn the strategy into a clean responsive website.</p>
+                  </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex gap-lg" data-reveal>
+                  <div class="flex-shrink-0 w-12 h-12 rounded-full border border-primary text-primary flex items-center justify-center font-bold text-xl">03</div>
+                  <div>
+                    <h4 class="font-headline text-headline-sm text-on-surface mb-2">Build</h4>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Engineering excellence meets design. We develop robust, clean, and fast codebases.</p>
+                  </div>
+                </div>
+                <!-- Step 4 -->
+                <div class="flex gap-lg" data-reveal>
+                  <div class="flex-shrink-0 w-12 h-12 rounded-full border border-primary text-primary flex items-center justify-center font-bold text-xl">04</div>
+                  <div>
+                    <h4 class="font-headline text-headline-sm text-on-surface mb-2">Launch</h4>
+                    <p class="font-body-md text-body-md text-on-surface-variant">After rigorous QA testing, we deploy your solution and provide ongoing support.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative hidden lg:block">
+              <div class="absolute inset-0 bg-primary/20 blur-[120px] rounded-full"></div>
+              <div class="relative glass-card aspect-[4/5] rounded-3xl overflow-hidden">
+                <div class="w-full h-full bg-gradient-to-br from-primary/20 via-surface-container to-tertiary/20 flex items-center justify-center">
+                  <div class="text-center p-lg">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-primary/60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                    <span class="text-on-surface-variant font-headline text-headline-sm">Analytics Dashboard</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Showcase Section -->
+      <section class="py-xl bg-surface-container-lowest">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto" data-site-showcase></div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="py-xl bg-surface-container">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto" data-site-testimonials></div>
+      </section>
+
+      <!-- Pricing Preview -->
+      <section class="py-xl bg-surface-container-lowest">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="text-center mb-lg">
             <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Pricing preview</div>
             <h2>Three tiers that keep the offer easy to scan.</h2>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <h3>Starter</h3>
-              <p class="text-on-surface-variant text-body-sm">1–3 page site. 5–7 day delivery.</p>
+            <article class="glass-card p-lg rounded-xl" data-reveal>
+              <h3 class="text-on-surface">Starter</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">1–3 page site. 5–7 day delivery.</p>
               <div class="flex items-baseline gap-1 my-md">
                 <strong class="text-4xl text-on-surface tracking-tight">$199</strong>
-                <span class="text-on-surface-variant">Entry package</span>
+                <span class="text-on-surface-variant font-body-sm">Entry package</span>
               </div>
-              <ul class="mt-3 ps-5 text-on-surface-variant text-body-sm grid gap-2">
-                <li>1–3 page website with clean layout</li>
-                <li>Core branding and contact path</li>
-                <li>Light launch support</li>
+              <ul class="mt-3 space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 1–3 page website with clean layout</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Core branding and contact path</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Light launch support</li>
               </ul>
             </article>
-            <article class="bg-surface border border-primary/35 rounded-2xl shadow-bettrix-lg -translate-y-1 p-lg" data-reveal>
-              <h3>Business</h3>
-              <p class="text-on-surface-variant text-body-sm">Up to 6 pages. 10–14 day delivery.</p>
+            <article class="glass-card p-lg rounded-xl border-primary/35 scale-105 z-10 bg-surface-container-low shadow-2xl" data-reveal>
+              <h3 class="text-on-surface">Business</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">Up to 6 pages. 10–14 day delivery.</p>
               <div class="flex items-baseline gap-1 my-md">
                 <strong class="text-4xl text-on-surface tracking-tight">$399</strong>
-                <span class="text-on-surface-variant">Most popular</span>
+                <span class="text-on-surface-variant font-body-sm">Most popular</span>
               </div>
-              <ul class="mt-3 ps-5 text-on-surface-variant text-body-sm grid gap-2">
-                <li>Up to six-page marketing site</li>
-                <li>Trust blocks, FAQs, and case studies</li>
-                <li>Ongoing maintenance support</li>
+              <ul class="mt-3 space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to six-page marketing site</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Trust blocks, FAQs, and case studies</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Ongoing maintenance support</li>
               </ul>
             </article>
-            <article class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
-              <h3>Pro</h3>
-              <p class="text-on-surface-variant text-body-sm">Custom design, ongoing support. 2–3 week delivery.</p>
+            <article class="glass-card p-lg rounded-xl" data-reveal>
+              <h3 class="text-on-surface">Pro</h3>
+              <p class="text-on-surface-variant font-body-sm text-body-sm">Custom design, ongoing support. 2–3 week delivery.</p>
               <div class="flex items-baseline gap-1 my-md">
                 <strong class="text-4xl text-on-surface tracking-tight">$699</strong>
-                <span class="text-on-surface-variant">Advanced support</span>
+                <span class="text-on-surface-variant font-body-sm">Advanced support</span>
               </div>
-              <ul class="mt-3 ps-5 text-on-surface-variant text-body-sm grid gap-2">
-                <li>Custom design with expanded pages</li>
-                <li>Priority turnaround and communication</li>
-                <li>Deep maintenance partnership</li>
+              <ul class="mt-3 space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom design with expanded pages</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Priority turnaround and communication</li>
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tertiary flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Deep maintenance partnership</li>
               </ul>
             </article>
           </div>
-          <p class="text-on-surface-variant text-body-sm text-center mt-3">All prices are negotiable based on project scope.</p>
+          <p class="text-on-surface-variant font-body-sm text-body-sm text-center mt-3">All prices are negotiable based on project scope.</p>
         </div>
       </section>
 
-      <section class=”py-4xl px-margin-mobile md:px-margin-desktop”>
-        <div class=”max-w-container mx-auto”>
-          <div class=”grid gap-md mb-2xl”>
-            <div class=”inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase”>What our clients say</div>
-            <h2>Trust signals that reduce hesitation.</h2>
-          </div>
-          <div class=”grid grid-cols-1 md:grid-cols-3 gap-md”>
-            <article class=”bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2” data-reveal>
-              <div class=”w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold”>”</div>
-              <strong class=”text-on-surface text-lg tracking-tight”>Fast, clear, and easy to work with.</strong>
-              <span class=”text-on-surface-variant text-body-sm”>— Rahim, restaurant owner, Dhaka</span>
-            </article>
-            <article class=”bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2” data-reveal>
-              <div class=”w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold”>”</div>
-              <strong class=”text-on-surface text-lg tracking-tight”>They made the site feel premium without making it expensive.</strong>
-              <span class=”text-on-surface-variant text-body-sm”>— Nusrat, boutique owner, Chittagong</span>
-            </article>
-            <article class=”bg-surface border border-outline rounded-2xl shadow-bettrix p-lg grid gap-2” data-reveal>
-              <div class=”w-11 h-11 grid place-items-center rounded-xl text-primary bg-primary/10 mb-md font-bold”>”</div>
-              <strong class=”text-on-surface text-lg tracking-tight”>Our maintenance now feels organized instead of reactive.</strong>
-              <span class=”text-on-surface-variant text-body-sm”>— Tanvir, startup founder, Narayanganj</span>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-soft py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto">
-          <div class="grid gap-md mb-2xl">
+      <!-- FAQ Section -->
+      <section class="py-xl">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto">
+          <div class="text-center mb-lg">
             <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Frequently asked questions</div>
             <h2>Answer objections before they slow the call.</h2>
           </div>
-          <div class="bg-surface border border-outline rounded-2xl shadow-bettrix p-lg" data-reveal>
+          <div class="glass-card p-lg rounded-xl max-w-3xl mx-auto" data-reveal>
             <details open>
               <summary class="cursor-pointer text-on-surface font-semibold list-none">How quickly can you launch a website?</summary>
-              <p class="mt-3 text-on-surface-variant text-body-sm">
+              <p class="mt-3 text-on-surface-variant font-body-sm text-body-sm">
                 Starter sites typically go live in 5–7 days. Full multi-page builds take 2–3 weeks depending on content readiness.
               </p>
             </details>
-            <hr class="my-3 border-outline/50" />
+            <hr class="my-3 border-outline/30" />
             <details>
               <summary class="cursor-pointer text-on-surface font-semibold list-none">Do you work with small businesses and startups?</summary>
-              <p class="mt-3 text-on-surface-variant text-body-sm">Yes. Bettrix is designed to support local businesses, mid-size teams, and startups.</p>
+              <p class="mt-3 text-on-surface-variant font-body-sm text-body-sm">Yes. Bettrix is designed to support local businesses, mid-size teams, and startups.</p>
             </details>
-            <hr class="my-3 border-outline/50" />
+            <hr class="my-3 border-outline/30" />
             <details>
               <summary class="cursor-pointer text-on-surface font-semibold list-none">Can you maintain the website after launch?</summary>
-              <p class="mt-3 text-on-surface-variant text-body-sm">
+              <p class="mt-3 text-on-surface-variant font-body-sm text-body-sm">
                 Yes. Ongoing maintenance is part of the offer, including updates, fixes, and support.
               </p>
             </details>
-            <hr class="my-3 border-outline/50" />
+            <hr class="my-3 border-outline/30" />
             <details>
               <summary class="cursor-pointer text-on-surface font-semibold list-none">Do I need to know exactly what I want first?</summary>
-              <p class="mt-3 text-on-surface-variant text-body-sm">No. Bettrix helps turn the rough idea into a clear plan and clean website structure.</p>
+              <p class="mt-3 text-on-surface-variant font-body-sm text-body-sm">No. Bettrix helps turn the rough idea into a clear plan and clean website structure.</p>
             </details>
           </div>
         </div>
       </section>
 
-      <section class="py-4xl px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-container mx-auto">
-          <div class="cta-band" data-reveal>
+      <!-- CTA Section -->
+      <section class="py-xl overflow-hidden relative">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container mx-auto relative z-10">
+          <div class="cta-band glass-card p-lg md:p-xl rounded-2xl" data-reveal>
             <div class="grid gap-md">
               <div class="inline-flex items-center gap-1.5 mb-3 text-primary font-label-sm tracking-widest uppercase">Ready when you are</div>
               <h2>Book a discovery call and map the fastest path forward.</h2>
             </div>
             <div class="flex flex-wrap gap-3">
-              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-primary shadow-bettrix-blue hover:-translate-y-0.5 transition-all" href="contact.html#booking">Book a discovery call</a>
-              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white bg-tertiary shadow-bettrix-green hover:-translate-y-0.5 transition-all" href="contact.html#whatsapp">Chat on WhatsApp</a>
+              <a class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-bold hover:brightness-110 transition-all" href="contact.html#booking">Book a discovery call</a>
+              <a class="inline-flex items-center justify-center gap-2 border border-outline-variant text-on-surface px-8 py-4 rounded-lg font-bold hover:bg-surface-variant transition-all" href="contact.html#whatsapp-card">Chat on WhatsApp</a>
             </div>
           </div>
         </div>

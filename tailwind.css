@@ -2,82 +2,111 @@
 @plugin "@tailwindcss/forms";
 
 @theme {
-  /* Bettrix brand colors mapped to NexusTech token naming */
-  --color-surface: #ffffff;
-  --color-surface-container-low: #f9fafb;
-  --color-surface-container: #eef2f7;
-  --color-on-surface: #1e3a5f;
-  --color-on-surface-variant: #6b7280;
-  --color-primary: #1a56db;
-  --color-primary-container: #dbeafe;
-  --color-on-primary: #ffffff;
-  --color-tertiary: #0e9f6e;
-  --color-tertiary-container: #d1fae5;
-  --color-on-tertiary: #ffffff;
-  --color-outline: #e5e7eb;
-  --color-outline-variant: #d1d5db;
-  --color-error: #dc2626;
-  --color-background: #ffffff;
-  --color-on-background: #374151;
+  /* Stalwart Precision dark-mode color tokens */
+  --color-surface: #101415;
+  --color-surface-container-lowest: #0b0f10;
+  --color-surface-container-low: #191c1e;
+  --color-surface-container: #1d2022;
+  --color-surface-container-high: #272a2c;
+  --color-surface-container-highest: #323537;
+  --color-on-surface: #e0e3e5;
+  --color-on-surface-variant: #c5c6cd;
+  --color-inverse-surface: #e0e3e5;
+  --color-inverse-on-surface: #2d3133;
+  --color-primary: #bcc7de;
+  --color-on-primary: #263143;
+  --color-primary-container: #1e293b;
+  --color-on-primary-container: #8590a6;
+  --color-primary-fixed: #d8e3fb;
+  --color-primary-fixed-dim: #bcc7de;
+  --color-inverse-primary: #545f73;
+  --color-secondary: #b9c7e0;
+  --color-on-secondary: #233144;
+  --color-secondary-container: #3c4a5e;
+  --color-on-secondary-container: #abb9d2;
+  --color-tertiary: #b7c8e1;
+  --color-on-tertiary: #213145;
+  --color-tertiary-container: #1a2a3e;
+  --color-on-tertiary-container: #8191a9;
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+  --color-outline: #8f9097;
+  --color-outline-variant: #45474c;
+  --color-background: #101415;
+  --color-on-background: #e0e3e5;
+  --color-surface-variant: #323537;
+  --color-surface-tint: #bcc7de;
+  --color-surface-bright: #363a3b;
+  --color-surface-dim: #101415;
 
-  /* 8px spacing scale matching NexusTech */
+  /* 8px spacing scale matching Stitch/Stalwart Precision */
   --spacing-xs: 4px;
-  --spacing-sm: 8px;
+  --spacing-sm: 12px;
   --spacing-base: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 32px;
-  --spacing-2xl: 48px;
-  --spacing-3xl: 64px;
-  --spacing-4xl: 80px;
-  --spacing-5xl: 120px;
+  --spacing-md: 24px;
+  --spacing-lg: 48px;
+  --spacing-xl: 80px;
+  --spacing-2xl: 120px;
   --spacing-gutter: 24px;
   --spacing-margin-desktop: 64px;
   --spacing-margin-mobile: 16px;
 
-  /* Typography */
+  /* Typography — Plus Jakarta Sans for everything */
   --font-headline: "Plus Jakarta Sans", system-ui, sans-serif;
-  --font-body: Inter, system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-headline-lg: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-headline-sm: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body-md: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-label-md: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-label-sm: "Plus Jakarta Sans", system-ui, sans-serif;
 
   /* Font sizes */
   --font-size-headline-xl: 48px;
-  --font-size-headline-lg: 32px;
-  --font-size-headline-md: 24px;
-  --font-size-headline-sm: 18px;
+  --font-size-headline-lg: 48px;
+  --font-size-headline-lg-mobile: 32px;
+  --font-size-headline-md: 32px;
+  --font-size-headline-sm: 24px;
   --font-size-body-lg: 18px;
   --font-size-body-md: 16px;
   --font-size-body-sm: 14px;
-  --font-size-label-md: 12px;
-  --font-size-label-sm: 11px;
+  --font-size-label-md: 14px;
+  --font-size-label-sm: 12px;
 
   /* Line heights */
   --leading-headline-xl: 56px;
-  --leading-headline-lg: 40px;
-  --leading-headline-md: 32px;
-  --leading-headline-sm: 24px;
-  --leading-body-lg: 1.6;
-  --leading-body-md: 1.6;
-  --leading-body-sm: 1.5;
-  --leading-label-md: 1;
-  --leading-label-sm: 1;
+  --leading-headline-lg: 56px;
+  --leading-headline-lg-mobile: 40px;
+  --leading-headline-md: 40px;
+  --leading-headline-sm: 32px;
+  --leading-body-lg: 28px;
+  --leading-body-md: 24px;
+  --leading-body-sm: 20px;
+  --leading-label-md: 20px;
+  --leading-label-sm: 16px;
 
-  /* Border radius */
-  --radius-xs: 4px;
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-xl: 16px;
-  --radius-2xl: 24px;
-  --radius-3xl: 28px;
+  /* Border radius — Stalwart Precision values */
+  --radius-xs: 2px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --radius-xl: 8px;
+  --radius-2xl: 12px;
+  --radius-3xl: 16px;
+  --radius-full: 12px;
 
   /* Max width */
-  --container-max: 1120px;
+  --container-max: 1280px;
 
-  /* Shadows */
-  --shadow-bettrix: 0 18px 50px rgba(30, 58, 95, 0.08);
-  --shadow-bettrix-lg: 0 24px 60px rgba(26, 86, 219, 0.12);
-  --shadow-bettrix-blue: 0 16px 30px rgba(26, 86, 219, 0.22);
-  --shadow-bettrix-green: 0 20px 40px rgba(14, 159, 110, 0.25);
+  /* Shadows — ambient dark mode shadows */
+  --shadow-bettrix: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-bettrix-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-bettrix-blue: 0 4px 20px rgba(188, 199, 222, 0.12);
+  --shadow-bettrix-green: 0 4px 20px rgba(37, 211, 102, 0.15);
 }
 
 @layer base {
@@ -123,26 +152,26 @@
 
   h1 {
     font-family: var(--font-headline);
-    font-size: var(--font-size-headline-xl);
-    line-height: var(--leading-headline-xl);
-    letter-spacing: -0.05em;
+    font-size: var(--font-size-headline-lg);
+    line-height: var(--leading-headline-lg);
+    letter-spacing: -0.02em;
     font-weight: 700;
     color: var(--color-on-surface);
   }
 
   h2 {
     font-family: var(--font-headline);
-    font-size: var(--font-size-headline-lg);
-    line-height: var(--leading-headline-lg);
-    letter-spacing: -0.04em;
+    font-size: var(--font-size-headline-md);
+    line-height: var(--leading-headline-md);
+    letter-spacing: -0.01em;
     font-weight: 600;
     color: var(--color-on-surface);
   }
 
   h3 {
     font-family: var(--font-headline);
-    font-size: var(--font-size-headline-md);
-    line-height: var(--leading-headline-md);
+    font-size: var(--font-size-headline-sm);
+    line-height: var(--leading-headline-sm);
     font-weight: 600;
     color: var(--color-on-surface);
   }
@@ -150,27 +179,26 @@
 
 @layer components {
   .glass-card {
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(229, 231, 235, 0.3);
-    border-radius: var(--radius-2xl);
-    box-shadow: var(--shadow-bettrix);
-    transition: border-color 180ms ease;
+    background: rgba(29, 32, 34, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(69, 71, 76, 0.3);
+    border-radius: var(--radius-xl);
+    transition: border-color 300ms ease;
   }
 
   .glass-card:hover {
-    border-color: rgba(26, 86, 219, 0.5);
+    border-color: rgba(188, 199, 222, 0.4);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-tertiary));
+    background: linear-gradient(135deg, #bcc7de 0%, #b7c8e1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .section-soft {
-    background: linear-gradient(180deg, rgba(249, 250, 251, 0.75), rgba(255, 255, 255, 0));
+    background: var(--color-surface-container-low);
   }
 
   .cta-band {
@@ -180,15 +208,16 @@
     justify-content: space-between;
     gap: var(--spacing-md);
     padding: var(--spacing-lg);
-    border-radius: var(--radius-3xl);
-    background: linear-gradient(135deg, rgba(26, 86, 219, 0.08), rgba(14, 159, 110, 0.08));
-    border: 1px solid rgba(26, 86, 219, 0.12);
+    border-radius: var(--radius-2xl);
+    background: rgba(30, 41, 59, 0.3);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(69, 71, 76, 0.3);
   }
 }
 
 .logo-text {
   font-weight: 800;
-  color: #1a2e5a;
+  color: var(--color-on-surface);
   letter-spacing: -0.5px;
   font-size: 1.4rem;
 }
@@ -205,20 +234,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
 .whatsapp-float:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
 }
 
 .whatsapp-tooltip {
   position: absolute;
   right: 64px;
-  background: #333;
-  color: #fff;
+  background: #1d2022;
+  color: #e0e3e5;
   font-size: 0.75rem;
   white-space: nowrap;
   padding: 6px 12px;
@@ -226,6 +255,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 200ms ease;
+  border: 1px solid rgba(69, 71, 76, 0.3);
 }
 
 .whatsapp-float:hover .whatsapp-tooltip {
@@ -234,8 +264,8 @@
 
 @utility reveal {
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 220ms ease, transform 220ms ease;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 
   &.is-visible {
     opacity: 1;
