@@ -72,9 +72,16 @@ function footerMarkup() {
 
 function whatsappMarkup() {
   return `
-    <a class="floating-whatsapp" id="whatsapp" href="contact.html#whatsapp" aria-label="Open WhatsApp contact">
-      <span class="floating-whatsapp__dot" aria-hidden="true"></span>
-      <span>WhatsApp</span>
+    <a href="https://wa.me/8801XXXXXXXXX"
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener"
+       aria-label="Chat with us on WhatsApp"
+       title="Chat with us">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="#fff" aria-hidden="true">
+        <path d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.7 5.5 2.1 7.9L.3 31.6l7.9-2.1c2.3 1.3 4.9 1.9 7.6 1.9h.1c8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4zm0 28.5h-.1c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5C3.7 20.9 3 18.5 3 16 3 8.9 8.9 3 16 3s13 5.9 13 13-5.9 12.9-13 12.9zm7.2-9.7c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.3-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.8-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.6.1-.2 0-.5 0-.7 0-.2-.9-2.2-1.2-3-.3-.8-.6-.7-.9-.7h-.7c-.2 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 2.9 0 1.7 1.2 3.4 1.4 3.6.2.3 2.4 3.7 5.9 5.2.8.3 1.5.5 2 .7.8.3 1.5.2 2.1.1.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.4-.3-.8-.5z"/>
+      </svg>
+      <span class="whatsapp-tooltip">Chat with us</span>
     </a>
   `;
 }
@@ -126,7 +133,7 @@ document.querySelectorAll('[data-site-header]').forEach((placeholder) => {
       <div class="site-header__inner">
         <a class="brand" href="index.html">
           <span class="brand__mark">B</span>
-          <span>Bettrix</span>
+          <span class="logo-text">Bettrix</span>
         </a>
         ${navMarkup()}
       </div>
